@@ -18,23 +18,21 @@ int main(){
     min=n1;
     if(max<n2){
         max=n2;
-        if(max<n3)
-            max=n3;
     }
-    else
-        if(max<n3)
-            max=n3;
-       
+    if(max<n3){
+        max=n3;  
+    }  
+
     printf("il massimo è: %.2f", max);
+
     if(min>n2){
         min=n2;
-        if(min>n3)
-            min=n3;
     }
-    else
-        if(min>n3)
-            min=n3;
-    printf("\nil minimoo è: %.2f", min);
+    if(min>n3){
+        min=n3;
+    }
+            
+    printf("\nil minimo è: %.2f", min);
 
     media=(n1+n2+n3)/3;
     printf("\nLa media vale: %.2f", media);
