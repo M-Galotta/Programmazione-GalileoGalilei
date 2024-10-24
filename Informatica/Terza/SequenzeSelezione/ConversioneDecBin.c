@@ -52,7 +52,7 @@ int main(){
             quoz=quoz/2; //abbiamo aggiornato il nuovo valore del quoziente
         }
         
-        printf("\nIl numero decimale %d in binario vale: %d%d%d%d%d%d", n5,n4,n3,n2,n1,n0);
+        printf("\nIl numero decimale %d in binario vale: %d%d%d%d%d%d", num,n5,n4,n3,n2,n1,n0);
 
     }
     else
