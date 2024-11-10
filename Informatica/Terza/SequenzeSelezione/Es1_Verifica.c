@@ -9,11 +9,10 @@ da 2 cifre e k compare 1 volta
 
 int main(){
 	int numero=0;
-	int n =0;
+	int n=0;//sarebbe la cifra k
 	int cntc=0;
-	int cntk=0;
+	int cntn=0;
 	int r, q;
-	
 	
 	printf("Inserisci un numero tra 0 e 9999: ");
 	scanf("%d", &numero);
@@ -27,18 +26,22 @@ int main(){
 			q=q/10;
 			cntc++;
 			printf("La cifra delle unità è: %d", r);
-			if(r==n)
-				cntk++;
+			if (r == n)
+				cntn++;
 		}
-		else
+		else{
 			printf("Hai inserito uno 0, il programma termina.");
+			cntc++;
+			if(numero==n)
+			 cntn++;
+		}
 		if(q!=0){
 			r=q%10;
 			q=q/10;
 			cntc++;
 			printf("\nLa cifra delle decine è: %d", r);
 			if(r==n)
-				cntk++;
+				cntn++;
 		}
 		if(q!=0){
 			r=q%10;
@@ -46,7 +49,7 @@ int main(){
 			cntc++;
 			printf("\nLa cifra delle centinaia è: %d", r);
 			if(r==n)
-				cntk++;
+				cntn++;
 		}
 		if(q!=0){
 			r=q%10;
@@ -54,12 +57,12 @@ int main(){
 			cntc++;
 			printf("\nLa cifra delle migliaia è: %d", r);
 			if(r==n)
-				cntk++;
+				cntn++;
 		}		
 	}
 	else{
-		//nell'else possiamo sviluppare nello specifico se numero o k non era valido
+		//nell'else possiamo sviluppare nello specifico se numero o n non era valido
 		printf("Hai inserito dei valori non validi..");
 	}
-	printf("\nIl numero inserito %d è composto da %d cifre e %d compare %d volte", numero, cntc, n, cntk);
+	printf("\nIl numero inserito %d è composto da %d cifre e %d compare %d volte", numero, cntc, n, cntn);
 }
