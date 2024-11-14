@@ -24,7 +24,7 @@ int main(){
 		if(q!=0){
 			r=q%10;
 			q=q/10;
-			cntc++;
+			cntc++;//cntc+=1;
 			printf("La cifra delle unità è: %d", r);
 			if (r == n)
 				cntn++;
@@ -33,8 +33,9 @@ int main(){
 			printf("Hai inserito uno 0, il programma termina.");
 			cntc++;
 			if(numero==n)
-			 cntn++;
+			 	cntn++;
 		}
+
 		if(q!=0){
 			r=q%10;
 			q=q/10;
