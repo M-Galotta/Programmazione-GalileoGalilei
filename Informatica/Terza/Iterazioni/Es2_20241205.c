@@ -1,16 +1,14 @@
 /* DATI N NUMERI , SOMMARLI 4 A 4
    TERMINA NON APPENA SI INTRODUCE UNO 0
-   ES: -29, 5, -3, 26 SOMMA=-1
-       124, -2, 16, 3 SOMMA=141
-       12, -1, 0 
+   ES: 
+    6
+	3
+	5
+	1
+	I=4 'somma=15'
+	12
+	3
+	47
+	98
+	I=8 'somma=160'
 */
-6
-3
-5
-1
-I=4 'somma'
-12
-3
-47
-98
-I=8 'SOMMA 
