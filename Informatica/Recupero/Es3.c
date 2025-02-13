@@ -25,6 +25,6 @@ int main(){
             printf("\nHai inserito uno 0");    
 
     }while(N!=0);
-    
+
     return 0;
 }
