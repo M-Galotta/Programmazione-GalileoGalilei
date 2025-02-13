@@ -21,7 +21,10 @@ int main(){
                 }
             }
         }
-        printf("hai inserito uno 0");     
+        else
+            printf("\nHai inserito uno 0");    
+
     }while(N!=0);
+    
     return 0;
 }
