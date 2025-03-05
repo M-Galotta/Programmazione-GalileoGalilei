@@ -29,7 +29,7 @@ void quadrato(int *_num, int *_somma){
 
     for(int i=1; i<=*_num; i++){
         printf("%d\t", dispari);
-        *somma +=dispari;
+        *_somma +=dispari;
         dispari+=2;
         
     }
