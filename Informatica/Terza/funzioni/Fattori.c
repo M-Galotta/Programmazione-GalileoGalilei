@@ -3,12 +3,13 @@ Es: 28 = 2*2*7   2, 2, 7
 Es: 36 = 2*13
 */
 #include <stdio.h>
+
 void calcolaFattori(int _n){
     int i=2;
 
     while(_n!=0){
         if(_n%i==0){
-            printf("%d\t", i);
+            printf("\t%d", i);
             _n = _n/i;
             i=2;
         } else 
