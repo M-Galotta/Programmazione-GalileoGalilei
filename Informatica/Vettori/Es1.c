@@ -9,5 +9,5 @@ int main(){
     int vettore[DIM]={0};
 
     richiediValori(vettore,DIM);
-    stampaVett(vettore,DIM,"-");
+    stampaVett(vettore,DIM,'-');
 }
