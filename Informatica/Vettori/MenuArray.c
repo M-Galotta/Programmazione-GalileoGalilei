@@ -12,10 +12,11 @@ int main(){
     int vett[DIM];
     int scelta;
     do{
-        printf("MENU'");
+        printf("\nMENU'");
         printf("\n1) Carica l'array");
         printf("\n2) Stampa l'array");
         printf("\n3) Ordina tramite il Bubble Sort.");
+        printf("\n4) Trovato il valore minimo e il valore massimo all'interno dell'array scambiare di posizione");
         printf("\nDigita 0 per terminare.");
         scanf("%d", &scelta);
 
@@ -24,6 +25,21 @@ int main(){
                 caricaVett(vett,DIM);
                 break;
             }
+            case 2:{
+                stampaVett(vett,DIM,'-');
+                break;
+            }
+            case 3:{
+                caricaBubble(vett, DIM);
+                break;
+            }
+            case 4:{
+                scambioMinMax(vett,DIM);
+                stampaVett(vett,DIM,'-');
+                break;
+            }
+            default:
+            break;   
         }
 
     }while(scelta!=0);
