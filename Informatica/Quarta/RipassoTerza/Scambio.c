@@ -1,11 +1,12 @@
 /*Data una matrice di valori scambiare gli elementi della diagonale principale con la diagonale secondaria.*/
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 #define N 4
 
 void caricaMat(int (*_mat)[N]){
-    printf("Carichiamo la matrice: ");
+    printf("Carichiamo la matrice: \n");
     for(int i=0; i<N; i++)
         for(int j=0; j<N; j++)
             _mat[i][j]=rand()%30 +1;
@@ -19,7 +20,7 @@ void stampaMat(int (*_mat)[N]){
             printf("%d\t", _mat[i][j]);
         printf("\n");
     }
-        
+     printf("\n");   
 }
 
 
