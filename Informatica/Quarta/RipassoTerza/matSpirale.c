@@ -16,11 +16,11 @@ void riempiMat(int mat[][N]){
             mat[i][right]=num+1;
         right--;
         //destra verso sinistra
-        for(i=right; i<=left; i--)
+        for(i=right; i>=left; i--)
             mat[bottom][i]=num+1;
         bottom--;
         //basso verso l'alto
-        for(i=bottom; i<=top; i--)
+        for(i=bottom; i>=top; i--)
             mat[i][left]=num+1;
         left++;
 
