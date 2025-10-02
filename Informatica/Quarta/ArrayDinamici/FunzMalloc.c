@@ -27,6 +27,13 @@ int* inserisciValori(int *_vettore, int _n){
     return _vettore;
 }
 
+void stampaVett(int *_vettore, int _n){
+    printf("Hai inserito i seguenti elementi: ");
+    for(int i=0; i<_n; i++){
+        printf("%d\t", _vettore[i] );
+    }
+    printf("\n");
+}
 
 int main(){
     int *vettore=NULL;//puntatore al vettore
@@ -41,5 +48,6 @@ int main(){
     vettore = inserisciValori(vettore,n);
     stampaVett(vettore,n);
     
+    free(vettore);
 
 }
