@@ -20,5 +20,6 @@ int main(){
     printf("Hai inserito: %s", buffer);
 
     free(buffer);
+    
     return 0;
 }
