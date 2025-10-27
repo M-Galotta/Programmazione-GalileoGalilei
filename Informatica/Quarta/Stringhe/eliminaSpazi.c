@@ -1,0 +1,1 @@
+/* Eliminare gli spazi da una stringa */
