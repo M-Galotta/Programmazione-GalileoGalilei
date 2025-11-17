@@ -16,20 +16,14 @@ string cifra(string str, int key){
     }
     while(str[i] != '\0'){
         controllo = 0;
-        if(str[i] + key > 122){
+        printf("%c", str[i]);
+        if( str[i] + key > 122 ){
             controllo = 26;
         }
         tmp[i] = str[i] + key - controllo;
         i++;
     }
-    /*while(str[i] != '\0'){
-        controllo = 0;
-        if(str[i] + key > 122){
-            controllo = 26;
-        }
-        tmp[i] = str[i] + key - controllo;
-        i++;
-    }*/
+  
     return tmp;
 }
 
