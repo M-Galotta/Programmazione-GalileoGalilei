@@ -20,7 +20,7 @@ void eliminaSpazi(String s){
 
 
 int main(){
-	String s = (String)malloc (sizeof(s) * sizeof(char));
+	String s = (String)malloc (50 * sizeof(char));
 	if (s == NULL) return 1;
 	
 	printf("Inserisci una stringa: ");

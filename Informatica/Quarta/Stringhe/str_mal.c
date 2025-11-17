@@ -13,7 +13,7 @@ void compatta(String buffer, int len){
                                     len--;
                                             }
                                             }
-}
+
 
 int conteggio(String frase){
     int cnt=0;
