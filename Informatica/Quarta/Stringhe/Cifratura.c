@@ -22,6 +22,14 @@ string cifra(string str, int key){
         tmp[i] = str[i] + key - controllo;
         i++;
     }
+    /*while(str[i] != '\0'){
+        controllo = 0;
+        if(str[i] + key > 122){
+            controllo = 26;
+        }
+        tmp[i] = str[i] + key - controllo;
+        i++;
+    }*/
     return tmp;
 }
 
