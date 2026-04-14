@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main() {
-    FILE *fp = fopen("numeri.dat", "rb");
+    FILE *fp = fopen("/workspaces/Programmazione-GalileoGalilei/Informatica/Quarta/FILE/numeri.dat", "rb");
     int numeri[3],i;
     
     if (fp == NULL) {
